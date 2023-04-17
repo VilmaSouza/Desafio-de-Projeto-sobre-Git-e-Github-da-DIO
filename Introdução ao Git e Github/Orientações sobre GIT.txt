@@ -1,0 +1,74 @@
+Dúvidas sobre a funcionalidade do git
+
+Vilma Souza@VilmaSouza MINGW64 ~/Documents/Documentos/DIO Bootcamp/DEV/GIT/dio-desafio-git-github-primeiro-repositorio (main)
+
+git clone https://github.com/VilmaSouza/dio-desafio-git-github-primeiro-repositorio.git
+
+git add . => para adicionar tudo que está nesse repositorio para Github
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "Anota\303\247\303\265es sobre d\303\272vidas Git Github.txt"
+
+
+e para concluir:
+
+git commit -m "Inclusão das anotações do curso de Git/Github"(isso é uma forma de deixar registrado o que foi alterado ou que vai para Github)
+
+[main 6f3269a] Inclusão das anotações do curso de Git/Github
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "Anota\303\247\303\265es sobre d\303\272vidas Git Github.txt"
+
+$ git push origin main (para que seja atualizado github)
+
+$ git push origin main
+fatal: credential-cache unavailable; no unix socket support
+Everything up-to-date
+está dando erro de socket support
+
+
+…ou crie um novo repositório na linha de comando
+echo "# repo-test" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/VilmaSouza/repo-test. git
+ git push -u origem principal
+
+
+…ou envie um repositório existente a partir da linha de comando
+git remote add origin https://github.com/VilmaSouza/repo-test.git
+ git branch -M main 
+git push -u origin main
+
+
+fatal: credential-cache unavailable; no unix socket support
+To https://github.com/VilmaSouza/dio-desafio-git-github-primeiro-repositorio.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/VilmaSouza/dio-desafio-git-github-primeiro-repositorio.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+fatal: cache de credenciais indisponível; sem suporte a soquete unix
+Para https://github.com/VilmaSouza/dio-desafio-git-github-primeiro-repositorio.git
+  ! [rejeitado] main -> main (obter primeiro)
+erro: falha ao enviar algumas referências para 'https://github.com/VilmaSouza/dio-desafio-git-github-primeiro-repositorio.git'
+dica: as atualizações foram rejeitadas porque o controle remoto contém o trabalho que você faz
+dica: não tem localmente. Isso geralmente é causado por outro repositório empurrando
+dica: para a mesma ref. Você pode querer primeiro integrar as alterações remotas
+dica: (por exemplo, 'git pull ...') antes de empurrar novamente.
+dica: Consulte a 'Nota sobre avanço rápido' em 'git push --help' para obter detalhes.
+
+
+
+
+
